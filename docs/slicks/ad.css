@@ -57,8 +57,9 @@
 /* Top emerald edge + bottom band share the green */
 .slick .topedge { position: absolute; top: 0; left: 0; right: 0; height: 8px; background: var(--ad-green); z-index: 2; }
 
-/* Left vertical green bar accent next to the headline */
-.gbar { position: absolute; left: 64px; width: 7px; background: var(--ad-green); }
+/* Left vertical green bar accent — sits in the left margin gutter, clear of
+   the copy (which starts at the 64px / 60px content edge). */
+.gbar { position: absolute; left: 30px; width: 7px; background: var(--ad-green); }
 
 /* Top-right bracket corner */
 .bracket {
