@@ -26,6 +26,7 @@ render() {
 render buyer-gig-economy           1080,1080
 render buyer-hire-a-crew           1080,1080
 render buyer-criteria              1080,1080
+render buyer-grow-your-business    1080,1080
 render buyer-working-the-ai        1200,628
 render operator-gig-economy        1080,1080
 render operator-run-a-crew         1080,1080
