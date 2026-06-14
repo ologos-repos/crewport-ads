@@ -1,0 +1,47 @@
+name: Sync copy mirror
+
+# Keeps docs/library/ in lockstep with the canonical copy in brand/, copy/,
+# and slicks/. If a source markdown file changes on main but the mirror was
+# not regenerated, this regenerates it and commits the result.
+#
+# Loop-safe: the bot's commit only touches docs/library/, which is NOT in the
+# trigger paths below, so it cannot re-trigger this workflow.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'brand/**/*.md'
+      - 'copy/**/*.md'
+      - 'slicks/**/*.md'
+      - 'scripts/sync-docs-copy.sh'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-copy-mirror
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate docs/library
+        run: bash scripts/sync-docs-copy.sh
+
+      - name: Commit mirror if it drifted
+        run: |
+          if [ -n "$(git status --porcelain docs/library)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/library
+            git commit -m "chore: sync docs/library mirror [skip ci]"
+            git push
+            echo "Mirror was stale; regenerated and committed."
+          else
+            echo "Mirror already in sync."
+          fi

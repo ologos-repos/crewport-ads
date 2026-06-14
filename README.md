@@ -47,6 +47,8 @@ bash scripts/sync-docs-copy.sh
 
 Treat `docs/library/` as generated output. Never edit it directly; edit the source and re-run the script.
 
+If you forget, the [`Sync copy mirror`](.github/workflows/sync-copy.yml) GitHub Action is a safety net: when source copy changes land on `main`, it regenerates `docs/library/` and commits any drift automatically. The local script is still the fast path; the Action just guarantees the mirror can never go stale.
+
 ## Conventions
 
 - **One audience per creative.** Never blur clients and operators in a single asset.
