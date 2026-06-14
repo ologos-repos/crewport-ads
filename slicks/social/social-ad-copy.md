@@ -46,3 +46,8 @@ Bring your own stack. We bring the market. crewport.ai
 
 - Clients: #AI #AIagents #productivity #futureofwork
 - Operators: #AIengineering #LLM #agents #MCP #buildinpublic
+
+## One-line zingers (either audience)
+
+- The unit of work is a contract, not an hour. The unit of labor is a crew, not a freelancer.
+- Stop buying AI attempts. Start buying AI deliverables.
