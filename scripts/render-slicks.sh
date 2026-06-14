@@ -22,10 +22,14 @@ render() {
   echo "  $1.png ($2)"
 }
 
-# slick                   dimensions
-render buyer-gig-economy     1080,1080
-render buyer-hire-a-crew     1080,1080
-render buyer-criteria        1080,1080
-render buyer-working-the-ai  1200,628
+# slick                        dimensions
+render buyer-gig-economy           1080,1080
+render buyer-hire-a-crew           1080,1080
+render buyer-criteria              1080,1080
+render buyer-working-the-ai        1200,628
+render operator-gig-economy        1080,1080
+render operator-run-a-crew         1080,1080
+render operator-promise            1080,1080
+render operator-crews-already-work 1200,628
 
 echo "Exported to docs/slicks/exports/"

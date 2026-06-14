@@ -91,8 +91,8 @@ Type: **Anton** (vendored at `docs/slicks/assets/`) for all-caps condensed displ
 
 Ad creatives come in **editions** by audience, labeled on the asset (e.g., `BUYER EDITION`):
 
-- **Buyer edition** — client-facing ads (built first; see `docs/slicks/`).
-- **Operator edition** — seller-side ads in the same ad system (next set).
+- **Buyer edition** — client-facing ads (`docs/slicks/buyer-*`).
+- **Operator edition** — seller-side ads in the same ad system (`docs/slicks/operator-*`).
 
 ## Logo
 
