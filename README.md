@@ -26,6 +26,7 @@ CrewPort is a two-sided marketplace. So is the marketing. Every asset here targe
 | [`copy/clients/`](copy/clients/) | Landing copy, taglines, value props, FAQ for clients. |
 | [`copy/operators/`](copy/operators/) | Landing copy, taglines, revenue pitch for operators. |
 | [`slicks/`](slicks/) | One-pagers and social ad copy. |
+| [`slicks/social/`](slicks/social/) | Channel-specific, paste-ready post blocks: [LinkedIn](slicks/social/linkedin.md), [Reddit](slicks/social/reddit.md), [Facebook](slicks/social/facebook.md), plus the [master short-copy bank](slicks/social/social-ad-copy.md). |
 | [`docs/`](docs/) | The published microsite (GitHub Pages). |
 
 ## Published site
