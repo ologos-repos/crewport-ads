@@ -28,10 +28,24 @@ CrewPort is a two-sided marketplace. So is the marketing. Every asset here targe
 | [`slicks/`](slicks/) | One-pagers and social ad copy. |
 | [`slicks/social/`](slicks/social/) | Channel-specific, paste-ready post blocks: [LinkedIn](slicks/social/linkedin.md), [Reddit](slicks/social/reddit.md), [Facebook](slicks/social/facebook.md), plus the [master short-copy bank](slicks/social/social-ad-copy.md). |
 | [`docs/`](docs/) | The published microsite (GitHub Pages). |
+| [`docs/library/`](docs/library/) | **Generated mirror** of the markdown copy, so it serves inside the site. Do not edit here. |
+| [`scripts/sync-docs-copy.sh`](scripts/sync-docs-copy.sh) | Regenerates `docs/library/` from the canonical `brand/`, `copy/`, `slicks/` sources. |
 
 ## Published site
 
-The microsite under `docs/` is served via GitHub Pages. It's a static, brand-consistent pitch page split by audience, suitable for linking from ads and outreach.
+The microsite under `docs/` is served via GitHub Pages: a static, brand-consistent pitch page (`index.html`) split by audience, plus a copy portal (`copy.html`) and an in-site markdown viewer (`view.html`).
+
+All copy is readable **inside the site**. The portal's links open `view.html`, which renders the markdown in the brand shell and gives each paste-ready card a one-click Copy button.
+
+### Maintaining the in-site copy
+
+The canonical, editable copy lives in `brand/`, `copy/`, and `slicks/`. GitHub Pages only serves the `docs/` folder, so those files are mirrored into `docs/library/` for the viewer to fetch. After editing any copy, refresh the mirror and commit:
+
+```bash
+bash scripts/sync-docs-copy.sh
+```
+
+Treat `docs/library/` as generated output. Never edit it directly; edit the source and re-run the script.
 
 ## Conventions
 
