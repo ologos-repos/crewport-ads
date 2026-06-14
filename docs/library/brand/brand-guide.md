@@ -96,9 +96,17 @@ Ad creatives come in **editions** by audience, labeled on the asset (e.g., `BUYE
 
 ## Logo
 
-- `docs/assets/crewport-logo.png` — primary mark.
-- Give it clear space equal to the height of the "C". Never stretch. Never recolor the mark.
-- On cream (site) surfaces use the mark as-is. On dark (ad) surfaces use the wordmark in white/green or a light logo variant (request from the CrewPort repo if needed).
+The mark is the hexagonal "crew" emblem over the CREWPORT wordmark. Two transparent variants, sourced from the CrewPort repo (`web/public/assets/`). **Match the variant to the surface:**
+
+| File | Ink | Use on |
+|---|---|---|
+| `docs/assets/crewport-logo-dark.png` | Dark | Cream **site** chrome (nav, footers) |
+| `docs/slicks/assets/crewport-logo-white.png` | White | Dark **ad** slicks |
+| `docs/assets/crewport-logo.png` | White-on-black (baked bg) | Social `og:image` only — has a background, so not for on-page chrome |
+
+- Give the mark clear space equal to the emblem's height. Never stretch, never recolor.
+- Never put the white-on-black `crewport-logo.png` on a cream surface (it shows a black box). Use the transparent dark variant there.
+- Naming note: in the CrewPort repo, `crewport-logo-transparent.png` is the **white** logo (for dark) and `crewport-logo-light-transparent.png` is the **dark** logo (for light) — counterintuitive, so we renamed them by ink here.
 
 ## Audiences
 
