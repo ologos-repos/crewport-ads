@@ -28,7 +28,7 @@ CrewPort is a two-sided marketplace. So is the marketing. Every asset here targe
 | [`slicks/`](slicks/) | One-pagers and social ad copy (text). |
 | [`docs/slicks/`](docs/slicks/) | **Visual ad slicks** — editable HTML templates in the dark/green ad identity, shared `ad.css`, PNG exports, and a gallery. |
 | [`slicks/reference/`](slicks/reference/) | Original in-market ad creatives the HTML slicks were rebuilt from. |
-| [`slicks/social/`](slicks/social/) | Channel-specific, paste-ready post blocks: [LinkedIn](slicks/social/linkedin.md), [Reddit](slicks/social/reddit.md), [Facebook](slicks/social/facebook.md), plus the [master short-copy bank](slicks/social/social-ad-copy.md). |
+| [`slicks/social/`](slicks/social/) | Channel-specific, paste-ready post blocks: [LinkedIn](slicks/social/linkedin.md), [Reddit](slicks/social/reddit.md), [Facebook](slicks/social/facebook.md), [X/Twitter](slicks/social/x.md), [YouTube](slicks/social/youtube.md), [Discord](slicks/social/discord.md), [Hacker News](slicks/social/hacker-news.md), plus the [master short-copy bank](slicks/social/social-ad-copy.md). |
 | [`docs/`](docs/) | The published microsite (GitHub Pages). |
 | [`docs/library/`](docs/library/) | **Generated mirror** of the markdown copy, so it serves inside the site. Do not edit here. |
 | [`scripts/sync-docs-copy.sh`](scripts/sync-docs-copy.sh) | Regenerates `docs/library/` from the canonical `brand/`, `copy/`, `slicks/` sources. |
