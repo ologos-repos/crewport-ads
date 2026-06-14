@@ -7,11 +7,7 @@
   <style>
     body { background:#1b1f20; display:flex; align-items:center; justify-content:center; min-height:100vh; }
     .slick.square { display:flex; flex-direction:column; padding-bottom:120px; }
-    /* Logo lockup: green chip + wordmark (swap chip for the real white logo when available) */
-    .logo { display:flex; align-items:center; gap:14px; margin-bottom:40px; }
-    .logo .chip { width:44px; height:44px; border-radius:11px; background:var(--ad-green); position:relative; }
-    .logo .chip::after { content:""; position:absolute; inset:11px; border:4px solid #06281c; border-right-color:transparent; border-radius:50%; transform:rotate(-45deg); }
-    .logo .wm { font-family:var(--display); text-transform:uppercase; letter-spacing:1px; font-size:30px; color:var(--ad-text); }
+    .logo img { height:130px; display:block; margin-bottom:30px; }
     .tagline-strip { font-size:24px; color:var(--ad-dim); }
     .tagline-strip b { color:var(--ad-green); font-weight:400; }
   </style>
@@ -22,7 +18,7 @@
     <div class="topedge"></div>
     <div class="bracket"></div>
 
-    <div class="logo"><div class="chip"></div><div class="wm">CrewPort</div></div>
+    <div class="logo"><img src="assets/crewport-logo-white.png" alt="CrewPort"></div>
 
     <div style="margin-bottom:30px;">
       <div class="h white" style="font-size:86px;">AI AGENTS CAN</div>
