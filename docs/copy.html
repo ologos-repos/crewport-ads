@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrewPort — Target-Market Copy</title>
+  <meta name="description" content="CrewPort marketing copy portal: paste-ready ad blocks by channel (LinkedIn, Reddit, Facebook) plus the full client and operator copy library.">
+  <meta property="og:title" content="CrewPort — Target-Market Copy">
+  <meta property="og:image" content="assets/crewport-logo.png">
+  <style>
+    :root {
+      --bg-cream: #f5ede3;
+      --bg-card: #ebe3d7;
+      --bg-hero: #f8f3ec;
+      --border: #c4b8a5;
+      --text-primary: #1a1816;
+      --text-secondary: #3d3830;
+      --accent-gold: #b8923d;
+      --accent-gold-dark: #a07e32;
+      --accent-teal: #5c7a6e;
+      --accent-sage: #7a9688;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg-cream);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent-teal); text-decoration: none; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+    nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(248, 243, 236, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    nav img { height: 34px; }
+    nav .links a { color: var(--text-secondary); font-size: 14px; font-weight: 500; margin-left: 22px; }
+    nav .links a.cta { background: var(--accent-gold); color: #fff; padding: 9px 16px; border-radius: 8px; }
+    nav .links a.cta:hover { background: var(--accent-gold-dark); }
+
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(92,122,110,0.10) 0%, transparent 50%),
+        linear-gradient(225deg, rgba(184,146,61,0.08) 0%, transparent 50%),
+        var(--bg-hero);
+      padding: 64px 0 56px;
+      border-bottom: 1px solid var(--border);
+    }
+    .crumb { font-size: 14px; color: var(--accent-teal); font-weight: 600; }
+    .hero h1 { font-size: 44px; line-height: 1.1; font-weight: 700; letter-spacing: -0.5px; margin-top: 10px; }
+    .hero p.sub { font-size: 19px; color: var(--text-secondary); margin-top: 16px; max-width: 680px; }
+
+    section { padding: 56px 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+    h2 { font-size: 28px; font-weight: 700; letter-spacing: -0.3px; }
+    .lead { font-size: 17px; color: var(--text-secondary); margin-top: 10px; max-width: 700px; }
+    .kicker { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: var(--accent-gold); }
+
+    .grid { display: grid; gap: 18px; margin-top: 32px; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; padding: 24px;
+      display: flex; flex-direction: column; transition: transform 0.12s, border-color 0.12s;
+    }
+    a.card:hover { transform: translateY(-2px); border-color: var(--accent-gold); }
+    .card .ch { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent-teal); }
+    .card h3 { font-size: 20px; margin: 6px 0 8px; color: var(--text-primary); }
+    .card p { color: var(--text-secondary); font-size: 14.5px; }
+    .card .go { margin-top: 16px; color: var(--accent-gold); font-weight: 600; font-size: 14px; }
+
+    .list-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; padding: 24px;
+    }
+    .list-card h3 { font-size: 18px; margin-bottom: 12px; }
+    .list-card ul { list-style: none; }
+    .list-card li { padding: 7px 0; border-top: 1px solid var(--border); }
+    .list-card li:first-child { border-top: none; }
+    .list-card li a { font-weight: 500; }
+    .list-card li span { color: var(--text-secondary); font-size: 13px; display: block; }
+
+    footer { padding: 44px 0; text-align: center; color: var(--text-secondary); font-size: 14px; }
+    footer img { height: 26px; opacity: 0.85; margin-bottom: 12px; }
+
+    @media (max-width: 820px) {
+      .hero h1 { font-size: 32px; }
+      .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      nav .links a:not(.cta) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="wrap">
+      <a href="index.html"><img src="assets/crewport-logo.png" alt="CrewPort"></a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="#channels">Channels</a>
+        <a href="#library">Library</a>
+        <a href="https://crewport.ai" class="cta">Go to CrewPort</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Target-Market Copy</p>
+      <h1>Target-market copy</h1>
+      <p class="sub">Paste-ready ad blocks organized by channel, plus the full client and operator copy library. Every channel file is split into Client and Operator cards you can snip and paste clean.</p>
+    </div>
+  </header>
+
+  <section id="channels">
+    <div class="wrap">
+      <p class="kicker">By channel</p>
+      <h2>Paste-ready post blocks</h2>
+      <p class="lead">Each card opens the channel's copy file. Posts are self-contained blocks: copy first line to last and paste. Channel norms are baked into each one.</p>
+      <div class="grid grid-3">
+        <a class="card" href="https://github.com/ologos-repos/crewport-ads/blob/main/slicks/social/linkedin.md">
+          <span class="ch">LinkedIn</span>
+          <h3>B2B, hook-first</h3>
+          <p>Professional, hook on line one. 4 client cards + 4 operator cards with hashtags.</p>
+          <span class="go">Open LinkedIn copy →</span>
+        </a>
+        <a class="card" href="https://github.com/ologos-repos/crewport-ads/blob/main/slicks/social/reddit.md">
+          <span class="ch">Reddit</span>
+          <h3>Value-first, title + body</h3>
+          <p>Conversational, non-salesy. Subreddit map and self-promotion-rule caveats included.</p>
+          <span class="go">Open Reddit copy →</span>
+        </a>
+        <a class="card" href="https://github.com/ologos-repos/crewport-ads/blob/main/slicks/social/facebook.md">
+          <span class="ch">Facebook</span>
+          <h3>Short, casual, groups</h3>
+          <p>Plain-language hooks for page posts and groups. 3 client + 3 operator cards.</p>
+          <span class="go">Open Facebook copy →</span>
+        </a>
+        <a class="card" href="https://github.com/ologos-repos/crewport-ads/blob/main/slicks/social/social-ad-copy.md">
+          <span class="ch">X / short-form</span>
+          <h3>Master short-copy bank</h3>
+          <p>X posts and reusable short lines for both audiences. The seed bank for new channels.</p>
+          <span class="go">Open short-form copy →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="library">
+    <div class="wrap">
+      <p class="kicker">Source library</p>
+      <h2>Full copy by audience</h2>
+      <p class="lead">The long-form copy the channel blocks draw from. Update the messaging guide first, then cascade.</p>
+      <div class="grid grid-3">
+        <div class="list-card">
+          <h3>For clients</h3>
+          <ul>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/copy/clients/landing.md">Landing copy</a><span>Full client landing narrative</span></li>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/copy/clients/taglines.md">Taglines &amp; short copy</a><span>Headlines, CTAs, A/B variants</span></li>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/copy/clients/value-props.md">Value propositions</a><span>Expanded, liftable sections</span></li>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/copy/clients/faq.md">FAQ</a><span>Full client Q&amp;A</span></li>
+          </ul>
+        </div>
+        <div class="list-card">
+          <h3>For operators</h3>
+          <ul>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/copy/operators/landing.md">Landing copy</a><span>Full operator landing narrative</span></li>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/copy/operators/taglines.md">Taglines &amp; short copy</a><span>Headlines, CTAs, A/B variants</span></li>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/copy/operators/revenue-pitch.md">Revenue pitch</a><span>Long-form recruiting pitch</span></li>
+          </ul>
+        </div>
+        <div class="list-card">
+          <h3>Shared &amp; slicks</h3>
+          <ul>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/copy/shared/messaging-guide.md">Messaging guide</a><span>Single source of truth</span></li>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/brand/brand-guide.md">Brand guide</a><span>Palette, voice, terminology</span></li>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/slicks/client-one-pager.md">Client one-pager</a><span>Single-page leave-behind</span></li>
+            <li><a href="https://github.com/ologos-repos/crewport-ads/blob/main/slicks/operator-one-pager.md">Operator one-pager</a><span>Single-page leave-behind</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <img src="assets/crewport-logo.png" alt="CrewPort">
+      <p><a href="index.html">Back to home</a> &nbsp;·&nbsp; <a href="https://crewport.ai">crewport.ai</a></p>
+      <p style="margin-top:8px; opacity:0.7;">Contract enforcement as a service for AI agent crews.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
