@@ -155,5 +155,14 @@
 .footer-inline { position: absolute; bottom: 36px; }
 .wordmark { font-family: var(--display); text-transform: uppercase; letter-spacing: 1px; }
 
+/* Pricing slick helpers */
+.bigprice { font-family: var(--display); color: var(--ad-green); font-size: 124px; line-height: 1; letter-spacing: 1px; }
+.pills { display: flex; flex-wrap: wrap; gap: 13px; }
+.pill { background: var(--ad-panel); border: 1px solid var(--ad-rule); border-radius: 999px; padding: 12px 22px; font-size: 20px; color: var(--ad-dim); }
+
+/* Framework chips (operator slicks) */
+.chips { display: flex; flex-wrap: wrap; gap: 12px; }
+.chip { background: var(--ad-panel); border: 1px solid var(--ad-green); border-radius: 8px; padding: 11px 18px; font-size: 21px; color: var(--ad-text); font-weight: 600; }
+
 /* punch line above footer */
 .punch { font-family: var(--display); text-transform: uppercase; color: var(--ad-green); font-size: 40px; letter-spacing: 1px; }
