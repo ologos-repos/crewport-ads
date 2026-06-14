@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrewPort — Copy</title>
+  <meta name="description" content="CrewPort marketing copy, rendered in-site.">
+  <style>
+    :root {
+      --bg-cream: #f5ede3;
+      --bg-card: #ebe3d7;
+      --bg-hero: #f8f3ec;
+      --border: #c4b8a5;
+      --text-primary: #1a1816;
+      --text-secondary: #3d3830;
+      --accent-gold: #b8923d;
+      --accent-gold-dark: #a07e32;
+      --accent-teal: #5c7a6e;
+      --accent-sage: #7a9688;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg-cream);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent-teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+    nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(248, 243, 236, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    nav .wrap { max-width: 1040px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    nav img { height: 34px; }
+    nav .links a { color: var(--text-secondary); font-size: 14px; font-weight: 500; margin-left: 22px; }
+    nav .links a.cta { background: var(--accent-gold); color: #fff; padding: 9px 16px; border-radius: 8px; }
+    nav .links a.cta:hover { background: var(--accent-gold-dark); text-decoration: none; }
+
+    .crumb { font-size: 14px; color: var(--accent-teal); font-weight: 600; padding: 28px 0 0; }
+    .crumb a:hover { text-decoration: underline; }
+
+    .prose { padding: 22px 0 80px; }
+    .prose h1 { font-size: 38px; line-height: 1.15; letter-spacing: -0.5px; margin: 18px 0 14px; }
+    .prose h2 { font-size: 27px; margin: 38px 0 12px; letter-spacing: -0.3px; }
+    .prose h3 { font-size: 20px; margin: 28px 0 8px; }
+    .prose h4 { font-size: 16px; margin: 22px 0 6px; color: var(--text-secondary); }
+    .prose p { margin: 12px 0; color: var(--text-secondary); }
+    .prose strong { color: var(--text-primary); }
+    .prose ul, .prose ol { margin: 12px 0 12px 24px; color: var(--text-secondary); }
+    .prose li { margin: 5px 0; }
+    .prose hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    .prose a { font-weight: 500; }
+    .prose blockquote {
+      border-left: 3px solid var(--accent-gold); background: var(--bg-hero);
+      padding: 10px 18px; margin: 16px 0; color: var(--text-secondary); border-radius: 0 8px 8px 0;
+    }
+    .prose code {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 5px;
+      padding: 1px 6px; font-size: 0.9em; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .prose table { border-collapse: collapse; width: 100%; margin: 18px 0; font-size: 14.5px; }
+    .prose th, .prose td { border: 1px solid var(--border); padding: 9px 12px; text-align: left; vertical-align: top; }
+    .prose th { background: var(--bg-card); font-weight: 700; }
+
+    /* Fenced "card" blocks: paste-ready, with a copy button */
+    .codecard { position: relative; margin: 18px 0; }
+    .codecard pre {
+      background: var(--bg-hero); border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px 18px; overflow-x: auto;
+    }
+    .codecard pre code {
+      background: none; border: none; padding: 0; font-size: 14px; line-height: 1.55;
+      white-space: pre-wrap; word-break: break-word; color: var(--text-primary);
+    }
+    .copybtn {
+      position: absolute; top: 10px; right: 10px;
+      background: var(--accent-gold); color: #fff; border: none; border-radius: 7px;
+      padding: 6px 12px; font-size: 12.5px; font-weight: 600; cursor: pointer; opacity: 0.92;
+    }
+    .copybtn:hover { background: var(--accent-gold-dark); opacity: 1; }
+    .copybtn.done { background: var(--accent-teal); }
+
+    .err { padding: 60px 0; color: var(--text-secondary); }
+    footer { padding: 44px 0; text-align: center; color: var(--text-secondary); font-size: 14px; border-top: 1px solid var(--border); }
+    footer img { height: 26px; opacity: 0.85; margin-bottom: 12px; }
+
+    @media (max-width: 820px) {
+      .prose h1 { font-size: 30px; }
+      nav .links a:not(.cta) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="wrap">
+      <a href="index.html"><img src="assets/crewport-logo.png" alt="CrewPort"></a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="copy.html">All copy</a>
+        <a href="https://crewport.ai" class="cta">Go to CrewPort</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <a href="copy.html">Copy</a> &nbsp;/&nbsp; <span id="crumb-doc">Document</span></p>
+    <article class="prose" id="content">Loading…</article>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <img src="assets/crewport-logo.png" alt="CrewPort">
+      <p><a href="copy.html">Back to copy</a> &nbsp;·&nbsp; <a href="https://crewport.ai">crewport.ai</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/marked.min.js"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var doc = params.get('doc') || '';
+      var content = document.getElementById('content');
+      var crumb = document.getElementById('crumb-doc');
+
+      // Only allow our known library subtrees; no traversal.
+      var ok = /^(brand|copy|slicks)\/[A-Za-z0-9_\-\/]+\.md$/.test(doc) && doc.indexOf('..') === -1;
+      if (!ok) {
+        content.className = 'prose err';
+        content.innerHTML = '<h1>Pick a document</h1><p>No valid copy file specified. <a href="copy.html">Browse the copy portal.</a></p>';
+        return;
+      }
+
+      var pretty = doc.replace(/^.*\//, '').replace(/\.md$/, '').replace(/[-_]/g, ' ');
+      crumb.textContent = pretty.replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+
+      fetch('library/' + doc, { cache: 'no-cache' })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+        .then(function (md) {
+          content.innerHTML = marked.parse(md);
+          document.title = 'CrewPort — ' + crumb.textContent;
+          // Wrap each <pre> as a copy-card with a Copy button.
+          content.querySelectorAll('pre').forEach(function (pre) {
+            var card = document.createElement('div');
+            card.className = 'codecard';
+            pre.parentNode.insertBefore(card, pre);
+            card.appendChild(pre);
+            var btn = document.createElement('button');
+            btn.className = 'copybtn';
+            btn.textContent = 'Copy';
+            btn.addEventListener('click', function () {
+              var text = pre.innerText;
+              navigator.clipboard.writeText(text).then(function () {
+                btn.textContent = 'Copied'; btn.classList.add('done');
+                setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1500);
+              });
+            });
+            card.appendChild(btn);
+          });
+        })
+        .catch(function () {
+          content.className = 'prose err';
+          content.innerHTML = '<h1>Not found</h1><p>Could not load <code>' + doc + '</code>. <a href="copy.html">Back to the copy portal.</a></p>';
+        });
+    })();
+  </script>
+</body>
+</html>
