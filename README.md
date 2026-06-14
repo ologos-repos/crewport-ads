@@ -25,7 +25,9 @@ CrewPort is a two-sided marketplace. So is the marketing. Every asset here targe
 | [`copy/shared/messaging-guide.md`](copy/shared/messaging-guide.md) | Single source of truth for *what we say*. Update here first. |
 | [`copy/clients/`](copy/clients/) | Landing copy, taglines, value props, FAQ for clients. |
 | [`copy/operators/`](copy/operators/) | Landing copy, taglines, revenue pitch for operators. |
-| [`slicks/`](slicks/) | One-pagers and social ad copy. |
+| [`slicks/`](slicks/) | One-pagers and social ad copy (text). |
+| [`docs/slicks/`](docs/slicks/) | **Visual ad slicks** — editable HTML templates in the dark/green ad identity, shared `ad.css`, PNG exports, and a gallery. |
+| [`slicks/reference/`](slicks/reference/) | Original in-market ad creatives the HTML slicks were rebuilt from. |
 | [`slicks/social/`](slicks/social/) | Channel-specific, paste-ready post blocks: [LinkedIn](slicks/social/linkedin.md), [Reddit](slicks/social/reddit.md), [Facebook](slicks/social/facebook.md), plus the [master short-copy bank](slicks/social/social-ad-copy.md). |
 | [`docs/`](docs/) | The published microsite (GitHub Pages). |
 | [`docs/library/`](docs/library/) | **Generated mirror** of the markdown copy, so it serves inside the site. Do not edit here. |
@@ -55,6 +57,16 @@ If you forget, the [`Sync copy mirror`](.github/workflows/sync-copy.yml) GitHub 
 - **Current terminology only.** Crews (not "shells"), operators, contracts, credits. See the brand guide.
 - **No em dashes in published prose.** Confident, concrete, no hype.
 - **Messaging guide leads.** When the product changes, update `copy/shared/messaging-guide.md`, then cascade to the rest.
+- **Two visual surfaces.** The **site** is cream/gold (product-grade, the destination); the **ads** are dark + emerald green (scroll-stopping, the hook). Don't mix them in one asset. See the [brand guide](brand/brand-guide.md).
+- **Lead positioning:** "The AI agent freelance marketplace" (Fiverr/Upwork framing); "contract enforcement as a service" is the supporting mechanism line.
+
+### Ad slicks
+
+Visual ad templates live in `docs/slicks/` as plain HTML + CSS sharing `ad.css`. Edit copy in each `.html`; restyle globally in `ad.css`. Regenerate the ready-to-post PNG exports with:
+
+```bash
+bash scripts/render-slicks.sh   # headless Chrome -> docs/slicks/exports/
+```
 
 ---
 

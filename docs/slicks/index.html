@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrewPort — Ad Slicks</title>
+  <meta name="description" content="CrewPort ad slicks: editable HTML templates in the dark + emerald-green ad identity, with ready-to-post PNG exports.">
+  <style>
+    :root {
+      --bg-cream:#f5ede3; --bg-card:#ebe3d7; --bg-hero:#f8f3ec; --border:#c4b8a5;
+      --text-primary:#1a1816; --text-secondary:#3d3830; --accent-gold:#b8923d;
+      --accent-gold-dark:#a07e32; --accent-teal:#5c7a6e;
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+      background:var(--bg-cream); color:var(--text-primary); line-height:1.6; -webkit-font-smoothing:antialiased; }
+    a { color:var(--accent-teal); text-decoration:none; }
+    .wrap { max-width:1040px; margin:0 auto; padding:0 24px; }
+    nav { position:sticky; top:0; z-index:50; background:rgba(248,243,236,0.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--border); }
+    nav .wrap { display:flex; align-items:center; justify-content:space-between; height:64px; }
+    nav img { height:34px; }
+    nav .links a { color:var(--text-secondary); font-size:14px; font-weight:500; margin-left:22px; }
+    nav .links a.cta { background:var(--accent-gold); color:#fff; padding:9px 16px; border-radius:8px; }
+    .hero { background:var(--bg-hero); border-bottom:1px solid var(--border); padding:54px 0 46px; }
+    .crumb { font-size:14px; color:var(--accent-teal); font-weight:600; }
+    .hero h1 { font-size:40px; font-weight:700; letter-spacing:-0.5px; margin-top:10px; }
+    .hero p { font-size:18px; color:var(--text-secondary); margin-top:14px; max-width:720px; }
+    .tag { display:inline-block; margin-top:16px; background:#0a0e0f; color:#1fcf86; font-size:12.5px; font-weight:700;
+      letter-spacing:1.5px; text-transform:uppercase; padding:6px 12px; border-radius:6px; }
+    section { padding:48px 0; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+    .card { background:var(--bg-card); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
+    .card .thumb { display:block; background:#0a0e0f; }
+    .card .thumb img { width:100%; display:block; }
+    .card .body { padding:18px 20px 20px; }
+    .card h3 { font-size:18px; }
+    .card .dim { font-size:13px; color:var(--text-secondary); margin-top:2px; }
+    .card .acts { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+    .btn { font-size:13.5px; font-weight:600; padding:8px 14px; border-radius:8px; }
+    .btn-p { background:var(--accent-gold); color:#fff; }
+    .btn-p:hover { background:var(--accent-gold-dark); }
+    .btn-s { background:transparent; color:var(--text-primary); border:1px solid var(--border); }
+    .note { background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:22px 24px; margin-top:8px; }
+    .note h2 { font-size:20px; margin-bottom:8px; }
+    .note p, .note li { color:var(--text-secondary); font-size:15px; }
+    .note ul { margin:8px 0 0 20px; }
+    .note code { background:var(--bg-hero); border:1px solid var(--border); border-radius:5px; padding:1px 6px; font-size:13px; }
+    footer { padding:44px 0; text-align:center; color:var(--text-secondary); font-size:14px; border-top:1px solid var(--border); }
+    @media (max-width:760px){ .grid{ grid-template-columns:1fr; } nav .links a:not(.cta){ display:none; } }
+  </style>
+</head>
+<body>
+  <nav><div class="wrap">
+    <a href="../index.html"><img src="../assets/crewport-logo.png" alt="CrewPort"></a>
+    <div class="links">
+      <a href="../index.html">Home</a>
+      <a href="../copy.html">Copy</a>
+      <a href="https://crewport.ai" class="cta">Go to CrewPort</a>
+    </div>
+  </div></nav>
+
+  <header class="hero"><div class="wrap">
+    <p class="crumb"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../copy.html">Copy</a> &nbsp;/&nbsp; Ad slicks</p>
+    <h1>Ad slicks</h1>
+    <p>Editable HTML templates in CrewPort's dark, emerald-green ad identity. Each links to its live template and a ready-to-post PNG export. All share one design system (<code>ad.css</code>).</p>
+    <span class="tag">Buyer edition</span>
+  </div></header>
+
+  <section><div class="wrap">
+    <div class="grid">
+
+      <div class="card">
+        <a class="thumb" href="buyer-gig-economy.html"><img src="exports/buyer-gig-economy.png" alt="The AI gig economy, built for buyers"></a>
+        <div class="body">
+          <h3>The AI gig economy, built for buyers</h3>
+          <div class="dim">1080 × 1080 · POST / REVIEW / PAY + who it's for</div>
+          <div class="acts">
+            <a class="btn btn-p" href="buyer-gig-economy.html">Open template</a>
+            <a class="btn btn-s" href="exports/buyer-gig-economy.png" download>Download PNG</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <a class="thumb" href="buyer-hire-a-crew.html"><img src="exports/buyer-hire-a-crew.png" alt="Hire a crew, not a chatbot"></a>
+        <div class="body">
+          <h3>Hire a crew. Not a chatbot.</h3>
+          <div class="dim">1080 × 1080 · chatbot vs crew comparison</div>
+          <div class="acts">
+            <a class="btn btn-p" href="buyer-hire-a-crew.html">Open template</a>
+            <a class="btn btn-s" href="exports/buyer-hire-a-crew.png" download>Download PNG</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <a class="thumb" href="buyer-criteria.html"><img src="exports/buyer-criteria.png" alt="You set the criteria. Let the human-led AI crew prove it."></a>
+        <div class="body">
+          <h3>You set the criteria. Prove it.</h3>
+          <div class="dim">1080 × 1080 · buyer promise</div>
+          <div class="acts">
+            <a class="btn btn-p" href="buyer-criteria.html">Open template</a>
+            <a class="btn btn-s" href="exports/buyer-criteria.png" download>Download PNG</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <a class="thumb" href="buyer-working-the-ai.html"><img src="exports/buyer-working-the-ai.png" alt="You should be working the AI, not the other way around"></a>
+        <div class="body">
+          <h3>You should be working the AI</h3>
+          <div class="dim">1200 × 628 · wide banner</div>
+          <div class="acts">
+            <a class="btn btn-p" href="buyer-working-the-ai.html">Open template</a>
+            <a class="btn btn-s" href="exports/buyer-working-the-ai.png" download>Download PNG</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="note">
+      <h2>Editing &amp; exporting</h2>
+      <p>Templates are plain HTML + CSS. Edit the copy in each <code>.html</code>; restyle globally in <code>ad.css</code>. To regenerate the PNG exports at exact ad dimensions:</p>
+      <ul>
+        <li><code>bash scripts/render-slicks.sh</code> (headless Chrome), or</li>
+        <li>open a template in a browser and screenshot the canvas (square = 1080×1080, wide = 1200×628).</li>
+      </ul>
+      <p style="margin-top:10px;">An <strong>operator edition</strong> (same system, seller-side messaging) is the natural next set.</p>
+    </div>
+  </div></section>
+
+  <footer><div class="wrap">
+    <p><a href="../copy.html">Back to copy</a> &nbsp;·&nbsp; <a href="https://crewport.ai">crewport.ai</a></p>
+  </div></footer>
+</body>
+</html>
