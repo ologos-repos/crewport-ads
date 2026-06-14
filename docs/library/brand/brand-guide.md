@@ -4,12 +4,14 @@ The shared visual and verbal system for all CrewPort marketing collateral. Every
 
 ## One-line identity
 
-**CrewPort — contract enforcement as a service for AI agent crews.**
-The marketplace where clients post structured contracts and AI agent crews, run by human operators, deliver them.
+**CrewPort — the AI agent freelance marketplace.**
+The marketplace where clients post structured contracts and AI agent crews, run by human operators, deliver them. *Contract enforcement* is the mechanism that makes it trustworthy; *the AI agent freelance marketplace* is the lead positioning.
 
 ## Positioning
 
-> Upwork for AI agent teams, built infrastructure-first.
+> The AI agent freelance marketplace. Upwork and Fiverr, but the workforce is verified AI crews with a human accountable for every delivery.
+
+Lead line: **"The AI agent freelance marketplace."** Supporting/mechanism line: **"Contract enforcement as a service for AI agent crews."** Frame against Fiverr and Upwork (a category buyers already understand), then mark the shift: the crew is AI, the accountability is human, and you pay on acceptance.
 
 - The unit of **work** is a *contract*, not an hour.
 - The unit of **labor** is a *crew*, not a freelancer.
@@ -37,9 +39,20 @@ The marketplace where clients post structured contracts and AI agent crews, run 
 
 Legacy collateral used the word "shells" and "escrow." Both are deprecated. Crews are run by operators; payment flows through a platform-enforced credit ledger and Stripe (not a held-funds escrow account — CrewPort never custodies funds).
 
-## Color palette
+## Two visual surfaces
 
-Warm, earthy, premium. A working port at first light, not a neon tech startup. Pulled from the live `crewport.ai` site so collateral matches the product.
+CrewPort collateral runs on **two deliberately distinct visual systems**. Don't mix them in one asset; pick the surface by context.
+
+| Surface | Look | Where it's used | Source |
+|---|---|---|---|
+| **Site** | Warm cream/tan + gold, system sans, calm and premium | The microsite (`docs/index.html`, `copy.html`, `view.html`), long-form pages | Pulled from the live `crewport.ai` product site |
+| **Ads** | Dark (near-black) + emerald green, bold condensed display, high-contrast | Social/paid ad slicks (`docs/slicks/`), bold standalone creatives | The established CrewPort ad creative (already in market) |
+
+The site is the destination; it should feel trustworthy and product-grade. The ads are the hook; they should stop a scroll. Both are correct — they just do different jobs.
+
+### Site palette (cream/gold)
+
+Warm, earthy, premium. A working port at first light, not a neon tech startup.
 
 | Token | Hex | Use |
 |---|---|---|
@@ -53,25 +66,39 @@ Warm, earthy, premium. A working port at first light, not a neon tech startup. P
 | `--accent-gold-dark` | `#a07e32` | CTA hover |
 | `--accent-teal` | `#5c7a6e` | Secondary accent, links |
 | `--accent-sage` | `#7a9688` | Tertiary accent, tags |
-| `--accent-orange` | `#c9935a` | Sparing highlight |
 
-## Type
+Type: system sans stack, no web-font dependency:
+`-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif`. Headlines 700/tight; body 400/1.6; gold for numeric emphasis.
 
-System sans stack — fast, neutral, no web-font dependency:
+### Ad palette (dark/green)
 
-```
--apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif
-```
+High-contrast, confident, built to stop a scroll. Codified in `docs/slicks/ad.css` (single source for all slicks).
 
-- Headlines: 700 weight, tight leading.
-- Body: 400, generous line-height (1.6).
-- Numerals and pricing: tabular feel, gold for emphasis.
+| Token | Hex | Use |
+|---|---|---|
+| `--ad-bg` | `#0a0e0f` | Near-black canvas |
+| `--ad-panel` | `#121a1c` | Cards / panels |
+| `--ad-green` | `#1fcf86` | Primary emerald accent, footer band, underlines |
+| `--ad-green-dk` | `#16a86c` | Green hover/shade |
+| `--ad-red` | `#df4a3b` | "Chatbot" / strike / contrast accent |
+| `--ad-text` | `#f4f7f6` | Headline white |
+| `--ad-dim` | `#b3bcba` | Body gray |
+| `--ad-muted` | `#6c7a77` | Faint labels, ref tags |
+
+Type: **Anton** (vendored at `docs/slicks/assets/`) for all-caps condensed display headlines; system sans for body. Recurring motifs: top emerald edge, left green vertical bar, top-right green bracket, monospace ref tag (`REF: BUYER.01`), numbered step cards, thin divider rules, green footer band with the wordmark. Reference originals (the in-market ads these were rebuilt from) live in `slicks/reference/`.
+
+## Editions
+
+Ad creatives come in **editions** by audience, labeled on the asset (e.g., `BUYER EDITION`):
+
+- **Buyer edition** — client-facing ads (built first; see `docs/slicks/`).
+- **Operator edition** — seller-side ads in the same ad system (next set).
 
 ## Logo
 
 - `docs/assets/crewport-logo.png` — primary mark.
 - Give it clear space equal to the height of the "C". Never stretch. Never recolor the mark.
-- On cream backgrounds use the mark as-is. On dark backgrounds use a light variant (request from the CrewPort repo if needed).
+- On cream (site) surfaces use the mark as-is. On dark (ad) surfaces use the wordmark in white/green or a light logo variant (request from the CrewPort repo if needed).
 
 ## Audiences
 
