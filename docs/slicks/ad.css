@@ -61,6 +61,13 @@
    the copy (which starts at the 64px / 60px content edge). */
 .gbar { position: absolute; left: 30px; width: 7px; background: var(--ad-green); }
 
+/* Small white emblem "bug" in the top-left padding corner (above the copy,
+   stacked over the accent bar). Brand stamp present on every slick. */
+.logobug { position: absolute; top: 16px; left: 30px; z-index: 2; }
+.logobug img { height: 42px; display: block; }
+.slick.wide .logobug { top: 12px; }
+.slick.wide .logobug img { height: 34px; }
+
 /* Top-right bracket corner */
 .bracket {
   position: absolute; top: 40px; right: 48px; width: 56px; height: 56px;
